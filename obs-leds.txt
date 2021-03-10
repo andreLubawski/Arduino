@@ -1,0 +1,35 @@
+cada entrada digital do arduino suporta 40mA
+
+{Isso não quer dizer que posso utilizar todas
+as entradas com 40mA, o limite para utilização
+de entradas simultaneamente é 200mA}
+
+###
+
+Ternsão no arduino: 5v
+corrente:40mA
+###
+
+LED
+
+tensão: 2v (o led absorve potência)
+corrente especificada pelo fabricante: 15mA
+
+###
+
+Sendo V = R * I
+
+(5-2) = R * 15m
+R= 3/0.015 = 200
+
+200 ohms em série com o led garantem
+que o led trabalhe adequadamente
+
+########################
+
+caso eu não tenha um resistor com valor exatamente
+igual ao necessário para o funcionamento próximo
+ao ideal, e também não consiga manipular o circuito
+para obter tal resistência, devo colocar uma resistência
+maior do que a obtida nos cálculos, o led funcionará
+com brilho menos intenso, porém, não será danificado.
